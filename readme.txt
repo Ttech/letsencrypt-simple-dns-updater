@@ -16,5 +16,5 @@ in each zone you wish to use certbot on
 this was based on the docs from https://dan.langille.org/2017/05/31/creating-a-txt-only-nsupdate-connection-for-lets-encrypt/ and https://certbot.eff.org/docs/using.html#hooks
 
 To run certbot:
-	certbot certonly --manual --preferred-challenges=dns --manual-auth-hook "/path/to/certbot-dns-updater.sh pre" --manual-cleanup-hook "/path/to/certbot-dns-updater.sh post" -d domain.com
+	certbot certonly --manual --preferred-challenges=dns --manual-auth-hook "/path/to/certbot-dns-updater.sh update" --manual-cleanup-hook "/path/to/certbot-dns-updater.sh clean" -d domain.com
 
