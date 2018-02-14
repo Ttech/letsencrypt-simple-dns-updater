@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #only thing you need to manually set
-KEY="/var/named/keys/certbot.private"
+KEY=""
 
 if [ $# -ne 1 -a -z $CERTBOT_DOMAIN ];
     then echo "cannot run with invalid params!"
