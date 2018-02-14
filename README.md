@@ -1,1 +1,0 @@
-# letsencrypt-simple-dns-updater
