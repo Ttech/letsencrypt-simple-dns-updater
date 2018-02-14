@@ -32,26 +32,11 @@ update delete _acme-challenge.${3}
 update add _acme-challenge.${3} 60 IN TXT "$5"
 send
 dnsupdater
-
-cat <<dnsupdater
-server $1
-zone $2
-update delete _acme-challenge.${3}
-update add _acme-challenge.${3} 60 IN TXT "$5"
-send
-dnsupdater
 }
 
 do_remove(){
 echo "Setting $2 ($4) on $1 with a key of $3"
 nsupdate -k $4 <<dnsupdater
-server ${1}
-zone ${2}
-update delete _acme-challenge.${3}
-send
-dnsupdater
-
-cat <<dnsupdater
 server ${1}
 zone ${2}
 update delete _acme-challenge.${3}
