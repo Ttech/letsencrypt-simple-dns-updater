@@ -1,3 +1,7 @@
+what is this?
+
+a very basic dns updater for manually updating a Bind DNS Server or anything that supports nsupdate. I'll be adding support to other DNS Servers later. This is meant to be simple and easy to use, hopefully it helps someone else.
+
 create a key
 	$ dnssec-keygen -a HMAC-SHA512 -b 512 -n USER certbot
 
