@@ -7,7 +7,7 @@ this will generate a key, usually in /var/named/keys or similar location.  find 
 copy this key to your named.conf
 	key certbot {
 	    algorithm HMAC-SHA512;
-	    secret "TgDiZn2IpmHjlF2B4qaHWHuBH3G4G76weISdPbt9iSNn8o9H5/yTDBNpJvw4y6wNz8+R5BpZ9r/wqnzeMphW8Q==";
+	    secret "<key>";
 	};
 
 in each zone you wish to use certbot on 
